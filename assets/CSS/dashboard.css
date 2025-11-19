@@ -1,0 +1,85 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar container */
+#sidebar {
+    width: 220px;                /* fixed sidebar width */
+    height: 100vh;               /* full viewport height */
+    background-color: #0093d0;   /* sidebar color */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;            /* scroll if content taller than viewport */
+    padding: 20px 10px;
+}
+
+/* Branding at top of sidebar */
+#branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#brand-icon {
+    width: 40px;
+    height: 40px;
+}
+
+#side-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+#navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#navigation li img.icon {
+    width: 25px;
+    height: 25px;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+#navigation li a:hover {
+    color: #ffeb3b; /* highlight color on hover */
+}
+
+/* Optional: icon invert for white */
+.icon-white {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(300deg) brightness(101%) contrast(105%);
+}
+
+/* Make sidebar scrollable if content exceeds height */
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}

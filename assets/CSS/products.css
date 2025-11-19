@@ -1,0 +1,223 @@
+/* ============================= */
+/* 🔍 Search Form + Add Button */
+/* ============================= */
+
+form[method="GET"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+form[method="GET"] input[type="text"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 250px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+form[method="GET"] input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form[method="GET"] button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+form[method="GET"] button:hover {
+    background-color: #0056b3;
+}
+
+form[method="GET"] button:active {
+    transform: scale(0.97);
+}
+
+/* Add Button */
+#addBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 25px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#addBtn:hover {
+    background-color: #218838;
+}
+
+#addBtn:active {
+    transform: scale(0.97);
+}
+
+
+/* ============================= */
+/* ➕ Add Product Form */
+/* ============================= */
+
+#addForm {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 350px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#addForm h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#addForm input, 
+#addForm select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+#addForm input:focus, 
+#addForm select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#addForm button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#addForm button:hover {
+    background-color: #0056b3;
+}
+
+/* File input styling */
+#addForm input[type="file"] {
+    padding: 5px;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form[method="GET"] input[type="text"] {
+        width: 80%;
+    }
+    
+    #addForm {
+        width: 90%;
+    }
+}
+
+/* Update Form Styling */
+.updateForm {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 350px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.updateForm:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.updateForm h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Labels */
+.updateForm label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Inputs and Select */
+.updateForm input,
+.updateForm select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input focus effect */
+.updateForm input:focus,
+.updateForm select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 4px rgba(0,123,255,0.3);
+    outline: none;
+}
+
+/* Submit Button */
+.updateForm button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.updateForm button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .updateForm {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
